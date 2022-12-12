@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/Image/Image.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/Image/Image.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+
+// Import hooks
+import { useState } from "react";
+
+// Import images
+import login from "../../Assets/images/login.jpg";
+
+// Import contexts
+import { useAuth } from "../../Authentication/Authentication";
+import { useCurrentProject } from "../../Contexts/currentProject";
+
+// Import end point
+import BACKEND from "../../Helpers/EndPoint";
+
+/**
+ * initial values for the values state
+ */
+const initialValues = {
+  src: login,
+  imageFile: null,
+};
+
+/**
+ * Image select component
+ *
+ * @Component
+ * @param {Function} setAttributes function that sets the state of the state of selected widget
+ * @returns {React.element}
+ */
+const Image = ({ setAttributes }) => {
+  const [values, setValues] = useState(initialValues);
+  const [file, setFile] = useState();
+  const [fileName, setFileName] = useState();
+
+  // Context that is used to share project info between project and workspace
+  const { currentProject } = useCurrentProject();
+
+  // Context authentication
+  const auth = useAuth();
+
+  /**
+   * Handler that show the selected image
+   *
+   * @param {Event} event the occurred event
+   */
+  const showPreview = (event) => {
+    if (event.target.files &amp;&amp; event.target.files[0]) {
+      setFile(event.target.files[0]);
+      setFileName(event.target.files[0].name);
+      const imageFile = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = (x) => {
+        setValues({ ...values, imageFile, src: x.target.result });
+        setAttributes({ src: x.target.result });
+      };
+      reader.readAsDataURL(imageFile);
+    } else {
+      setValues({ ...values, imageFile: null, src: login });
+      setAttributes({ src: login });
+    }
+  };
+
+  /**
+   * Handler for submit upload file
+   *
+   * @param {Event} event the occurred event
+   */
+  const uploadFile = (event) => {
+    event.preventDefault();
+    // Create form object and add image to it
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("FileName", fileName);
+    fetch(
+      `${BACKEND}api/projects/saveimage/${
+        JSON.parse(currentProject).generatedAppPath
+      }`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: "Bearer " + auth.getToken(),
+        },
+        body: formData,
+      }
+    )
+      .then((response) => response.blob())
+      .then((result) => {
+        setAttributes({
+          src: `${BACKEND}api/projects/loadimage/${
+            JSON.parse(currentProject).generatedAppPath
+          }${fileName}`,
+        });
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+  return (
+    &lt;>
+      &lt;div className="container text-center">
+        &lt;p>An Image&lt;/p>
+      &lt;/div>
+      &lt;form autoComplete="off" noValidate>
+        &lt;div className="card">
+          &lt;div className="card-body">
+            &lt;div className="form-group text-center">
+              &lt;input
+                className="form-control form-control-md"
+                id="formFileLg"
+                type="file"
+                accept="image/*"
+                name="imageFile"
+                onChange={showPreview}
+              >&lt;/input>
+            &lt;/div>
+            &lt;div className="form-group text-center m-2">
+              {
+                &lt;button
+                  type="submit"
+                  className="btn btn-dark"
+                  onClick={uploadFile}
+                >
+                  Submit
+                &lt;/button>
+              }
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+      &lt;/form>
+    &lt;/>
+  );
+};
+
+export default Image;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#About">About</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#Body">Body</a></li><li><a href="global.html#Branding">Branding</a></li><li><a href="global.html#convert_HTML_To_JSON">convert_HTML_To_JSON</a></li><li><a href="global.html#convert_HTML_To_JSON_Helper">convert_HTML_To_JSON_Helper</a></li><li><a href="global.html#DesignGroup">DesignGroup</a></li><li><a href="global.html#DesignMetaDate">DesignMetaDate</a></li><li><a href="global.html#EditPage">EditPage</a></li><li><a href="global.html#extractTextNodes">extractTextNodes</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#getCSSHelper">getCSSHelper</a></li><li><a href="global.html#getStyles">getStyles</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Image">Image</a></li><li><a href="global.html#initialValues">initialValues</a></li><li><a href="global.html#insertChild">insertChild</a></li><li><a href="global.html#NavBar">NavBar</a></li><li><a href="global.html#PreviewPage">PreviewPage</a></li><li><a href="global.html#Project">Project</a></li><li><a href="global.html#ProjectModal">ProjectModal</a></li><li><a href="global.html#Projects">Projects</a></li><li><a href="global.html#Services">Services</a></li><li><a href="global.html#SideBar">SideBar</a></li><li><a href="global.html#StyleBar">StyleBar</a></li><li><a href="global.html#useFetch">useFetch</a></li><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetSide">WidgetSide</a></li><li><a href="global.html#WorkspaceNavBar">WorkspaceNavBar</a></li><li><a href="global.html#Wrapper">Wrapper</a></li><li><a href="global.html#WrapperOne">WrapperOne</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Sun Sep 04 2022 02:51:00 GMT+0200 (Eastern European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

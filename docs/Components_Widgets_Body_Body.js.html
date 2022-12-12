@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/Widgets/Body/Body.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/Widgets/Body/Body.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// Import hooks
+import React, { useEffect, useState, useRef } from "react";
+
+// Import helpers
+import { insertChild } from "../../../Helpers/insertChild";
+
+// Import Components
+import Widget from "../Widget/Widget";
+
+// Import bootstrap components
+import Container from "react-bootstrap/Container";
+
+// Import contexts
+import { useSelectedWidget } from "../../../Contexts/selectedWidget";
+
+/**
+ * Component that contains the body of the user's page
+ *
+ * @Component
+ * @param {Array} childrenToLoad array of children objects to load it
+ * @returns {React.element}
+ */
+const Body = ({ childrenToLoad }) => {
+  // State to store the Children of current component
+  const [myChildren, setMyChildren] = useState([]);
+
+  // This context contains the selected element from the sidebar
+  const { selectedElement, setSelectedElement } = useSelectedWidget();
+
+  // ref that stores id of widgets
+  const idRef = useRef(0);
+
+  useEffect(() => {
+    // Load project mode
+    if (childrenToLoad) {
+      let loadedChildren = [];
+      for (let i = 0; i &lt; childrenToLoad.length; i++) {
+        loadedChildren.push(
+          &lt;Widget
+            WidgetName={childrenToLoad[i].name}
+            defaultStyling={childrenToLoad[i].style}
+            childrenToLoad={childrenToLoad[i].children}
+            myText={childrenToLoad[i].text}
+            myAttributes={childrenToLoad[i].attributes}
+            myId={idRef}
+            key={++idRef.current}
+          >&lt;/Widget>
+        );
+      }
+      // Set children state (component)
+      setMyChildren(loadedChildren);
+    }
+  }, [childrenToLoad]);
+
+  const handleOnClick = (e) => {
+    // Stop propagation to select child only
+    e.stopPropagation();
+
+    // If no selected element then don't insert a child
+    if (selectedElement === null) return;
+
+    // insert the selected element to my children
+    insertChild(
+      myChildren,
+      setMyChildren,
+      selectedElement,
+      setSelectedElement,
+      idRef
+    );
+  };
+
+  return (
+    &lt;Container
+      fluid
+      onClick={handleOnClick}
+      id="body"
+      className="border border-dark rounded shadow-lg"
+      style={{ minHeight: "85vh", backgroundColor: "#FFF" }}
+    >
+      {myChildren}
+    &lt;/Container>
+  );
+};
+
+export default Body;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#About">About</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#Body">Body</a></li><li><a href="global.html#Branding">Branding</a></li><li><a href="global.html#convert_HTML_To_JSON">convert_HTML_To_JSON</a></li><li><a href="global.html#convert_HTML_To_JSON_Helper">convert_HTML_To_JSON_Helper</a></li><li><a href="global.html#DesignGroup">DesignGroup</a></li><li><a href="global.html#DesignMetaDate">DesignMetaDate</a></li><li><a href="global.html#EditPage">EditPage</a></li><li><a href="global.html#extractTextNodes">extractTextNodes</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#getCSSHelper">getCSSHelper</a></li><li><a href="global.html#getStyles">getStyles</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Image">Image</a></li><li><a href="global.html#initialValues">initialValues</a></li><li><a href="global.html#insertChild">insertChild</a></li><li><a href="global.html#NavBar">NavBar</a></li><li><a href="global.html#PreviewPage">PreviewPage</a></li><li><a href="global.html#Project">Project</a></li><li><a href="global.html#ProjectModal">ProjectModal</a></li><li><a href="global.html#Projects">Projects</a></li><li><a href="global.html#Services">Services</a></li><li><a href="global.html#SideBar">SideBar</a></li><li><a href="global.html#StyleBar">StyleBar</a></li><li><a href="global.html#useFetch">useFetch</a></li><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetSide">WidgetSide</a></li><li><a href="global.html#WorkspaceNavBar">WorkspaceNavBar</a></li><li><a href="global.html#Wrapper">Wrapper</a></li><li><a href="global.html#WrapperOne">WrapperOne</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Sun Sep 04 2022 02:51:00 GMT+0200 (Eastern European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

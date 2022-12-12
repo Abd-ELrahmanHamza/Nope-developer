@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/Footer/Footer.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/Footer/Footer.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+
+// Import CSS
+import "./Footer.css";
+
+// Import Icons
+import { BsFacebook, BsStackOverflow, BsYoutube } from "react-icons/bs";
+import { RiTwitterLine } from "react-icons/ri";
+import { AiOutlineLinkedin } from "react-icons/ai";
+
+// Import react router dom components
+import { Link } from "react-router-dom";
+
+/**
+ * Footer component
+ *
+ * @Component
+ * @returns {React.element}
+ */
+const Footer = () => {
+  return (
+    // Start Footer
+    &lt;footer className="footer">
+      {/* Start footer Left div */}
+      &lt;div className="footer-left col-md-4 col-sm-6">
+        {/* Start about */}
+        &lt;p className="about">
+          &lt;span> About the company&lt;/span> Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Nemo adipisci accusantium consequatur, reprehenderit
+          assumenda minima placeat id ipsa. Adipisci atque qui ipsam. Cum modi
+          nostrum iste vel vero perspiciatis omnis.
+        &lt;/p>
+        {/* End about */}
+
+        {/* Start Icons */}
+        &lt;div className="icons">
+          &lt;Link to="/">
+            &lt;BsFacebook />
+          &lt;/Link>
+          &lt;Link to="/">
+            &lt;RiTwitterLine />
+          &lt;/Link>
+          &lt;Link to="/">
+            &lt;AiOutlineLinkedin />
+          &lt;/Link>
+          &lt;Link to="/">
+            &lt;BsYoutube />
+          &lt;/Link>
+          &lt;Link to="/">
+            &lt;BsStackOverflow />
+          &lt;/Link>
+        &lt;/div>
+        {/* End Icons */}
+      &lt;/div>
+      {/* End footer Left div */}
+
+      {/* Start footer center div */}
+      &lt;div className="footer-center col-md-4 col-sm-6">
+        &lt;div>
+          &lt;i className="fa fa-map-marker">&lt;/i>
+          &lt;p>
+            &lt;span> Free Zone, Area 7B, Block J&lt;/span> Nasr City, Egypt
+          &lt;/p>
+        &lt;/div>
+        &lt;div>
+          &lt;i className="fa fa-phone">&lt;/i>
+          &lt;p> +02 26736111&lt;/p>
+        &lt;/div>
+        &lt;div>
+          &lt;i className="fa fa-envelope">&lt;/i>
+          &lt;p>
+            &lt;a href="https://www.itworx.com/"> www.itworx.com&lt;/a>
+          &lt;/p>
+        &lt;/div>
+      &lt;/div>
+      {/* End footer center div */}
+
+      {/* Start footer right div */}
+      &lt;div className="footer-right col-md-4 col-sm-6">
+        &lt;h2>
+          &lt;span>Noob&lt;/span> Developer
+        &lt;/h2>
+
+        {/* Navigation */}
+        &lt;p className="menu">
+          &lt;Link to="/Dashboard"> Dashboard&lt;/Link> | &lt;Link to="/"> Landing&lt;/Link>{" "}
+          |{" "}
+          &lt;a href="https://github.com/itworx/CodedSummer2022_LCNC_T7_Frontend">
+            GitHub Repository
+          &lt;/a>
+        &lt;/p>
+
+        &lt;p className="name"> Noob Developer &amp;copy; 2022&lt;/p>
+      &lt;/div>
+      {/* End footer right div */}
+    &lt;/footer>
+    // End Footer
+  );
+};
+
+export default Footer;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#About">About</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#Body">Body</a></li><li><a href="global.html#Branding">Branding</a></li><li><a href="global.html#convert_HTML_To_JSON">convert_HTML_To_JSON</a></li><li><a href="global.html#convert_HTML_To_JSON_Helper">convert_HTML_To_JSON_Helper</a></li><li><a href="global.html#DesignGroup">DesignGroup</a></li><li><a href="global.html#DesignMetaDate">DesignMetaDate</a></li><li><a href="global.html#EditPage">EditPage</a></li><li><a href="global.html#extractTextNodes">extractTextNodes</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#getCSSHelper">getCSSHelper</a></li><li><a href="global.html#getStyles">getStyles</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Image">Image</a></li><li><a href="global.html#initialValues">initialValues</a></li><li><a href="global.html#insertChild">insertChild</a></li><li><a href="global.html#NavBar">NavBar</a></li><li><a href="global.html#PreviewPage">PreviewPage</a></li><li><a href="global.html#Project">Project</a></li><li><a href="global.html#ProjectModal">ProjectModal</a></li><li><a href="global.html#Projects">Projects</a></li><li><a href="global.html#Services">Services</a></li><li><a href="global.html#SideBar">SideBar</a></li><li><a href="global.html#StyleBar">StyleBar</a></li><li><a href="global.html#useFetch">useFetch</a></li><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetSide">WidgetSide</a></li><li><a href="global.html#WorkspaceNavBar">WorkspaceNavBar</a></li><li><a href="global.html#Wrapper">Wrapper</a></li><li><a href="global.html#WrapperOne">WrapperOne</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Sun Sep 04 2022 02:51:00 GMT+0200 (Eastern European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,1115 @@
+const page = {
+  name: "div",
+  text: "",
+  style: {},
+  attributes: {},
+  children: [
+    {
+      name: "nav",
+      text: "",
+      style: {
+        bootstrap: "site-header sticky-top py-1",
+      },
+      attributes: {},
+      children: [
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "container d-flex flex-column flex-md-row justify-content-between",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "a",
+              text: "",
+              style: {
+                bootstrap: "py-2",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Tour",
+              style: {
+                bootstrap: "py-2 d-none d-md-inline-block",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Product",
+              style: {
+                bootstrap: "py-2 d-none d-md-inline-block",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Features",
+              style: {
+                bootstrap: "py-2 d-none d-md-inline-block",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Enterprise",
+              style: {
+                bootstrap: "py-2 d-none d-md-inline-block",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Support",
+              style: {
+                bootstrap: "py-2 d-none d-md-inline-block",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Pricing",
+              style: {
+                bootstrap: "py-2 d-none d-md-inline-block",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Cart",
+              style: {
+                bootstrap: "py-2 d-none d-md-inline-block",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "div",
+      text: "",
+      style: {
+        bootstrap:
+          "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light",
+      },
+      attributes: {},
+      children: [
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap: "col-md-5 p-lg-5 mx-auto my-5",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "h1",
+              text: "Punny headline",
+              style: {
+                bootstrap: "display-4 font-weight-normal",
+              },
+              attributes: {},
+              children: [],
+            },
+            {
+              name: "p",
+              text: "And an even wittier subheading to boot. Jumpstart your marketing\n                        efforts with\n                        this example based on Apple's marketing pages.",
+              style: {
+                bootstrap: "lead font-weight-normal",
+              },
+              attributes: {},
+              children: [],
+            },
+            {
+              name: "a",
+              text: "Coming soon",
+              style: {
+                bootstrap: "btn btn-outline-secondary",
+              },
+              attributes: {
+                name: "#",
+              },
+              children: [],
+            },
+          ],
+        },
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap: "product-device box-shadow d-none d-md-block",
+          },
+          attributes: {},
+          children: [],
+        },
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "product-device product-device-2 box-shadow d-none d-md-block",
+          },
+          attributes: {},
+          children: [],
+        },
+      ],
+    },
+    {
+      name: "div",
+      text: "",
+      style: {
+        bootstrap: "d-md-flex flex-md-equal w-100 my-md-3 pl-md-3",
+      },
+      attributes: {},
+      children: [
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 py-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-light box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 p-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-dark box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "div",
+      text: "",
+      style: {
+        bootstrap: "d-md-flex flex-md-equal w-100 my-md-3 pl-md-3",
+      },
+      attributes: {},
+      children: [
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 p-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-dark box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 py-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-light box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "div",
+      text: "",
+      style: {
+        bootstrap: "d-md-flex flex-md-equal w-100 my-md-3 pl-md-3",
+      },
+      attributes: {},
+      children: [
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 p-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-white box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 py-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-white box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "div",
+      text: "",
+      style: {
+        bootstrap: "d-md-flex flex-md-equal w-100 my-md-3 pl-md-3",
+      },
+      attributes: {},
+      children: [
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 p-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-white box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap:
+              "bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "my-3 py-3",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h2",
+                  text: "Another headline",
+                  style: {
+                    bootstrap: "display-5",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "p",
+                  text: "And an even wittier subheading.",
+                  style: {
+                    bootstrap: "lead",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "bg-white box-shadow mx-auto",
+              },
+              attributes: {
+                name: "width: 80%; height: 300px; border-radius: 21px 21px 0 0;",
+              },
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "footer",
+      text: "",
+      style: {
+        bootstrap: "container py-5",
+      },
+      attributes: {},
+      children: [
+        {
+          name: "div",
+          text: "",
+          style: {
+            bootstrap: "row",
+          },
+          attributes: {},
+          children: [
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "col-12 col-md",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "small",
+                  text: "© 2017-2018",
+                  style: {
+                    bootstrap: "d-block mb-3 text-muted",
+                  },
+                  attributes: {},
+                  children: [],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "col-6 col-md",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h5",
+                  text: "Features",
+                  style: {},
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "ul",
+                  text: "",
+                  style: {
+                    bootstrap: "list-unstyled text-small",
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Cool stuff",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Random feature",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Team feature",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Stuff for developers",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Another one",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Last time",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "col-6 col-md",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h5",
+                  text: "Resources",
+                  style: {},
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "ul",
+                  text: "",
+                  style: {
+                    bootstrap: "list-unstyled text-small",
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Resource",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Resource name",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Another resource",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Final resource",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "col-6 col-md",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h5",
+                  text: "Resources",
+                  style: {},
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "ul",
+                  text: "",
+                  style: {
+                    bootstrap: "list-unstyled text-small",
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Business",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Education",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Government",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Gaming",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              name: "div",
+              text: "",
+              style: {
+                bootstrap: "col-6 col-md",
+              },
+              attributes: {},
+              children: [
+                {
+                  name: "h5",
+                  text: "About",
+                  style: {},
+                  attributes: {},
+                  children: [],
+                },
+                {
+                  name: "ul",
+                  text: "",
+                  style: {
+                    bootstrap: "list-unstyled text-small",
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Team",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Locations",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Privacy",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                    {
+                      name: "li",
+                      text: "",
+                      style: {},
+                      attributes: {},
+                      children: [
+                        {
+                          name: "a",
+                          text: "Terms",
+                          style: {
+                            bootstrap: "text-muted",
+                          },
+                          attributes: {
+                            name: "#",
+                          },
+                          children: [],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};

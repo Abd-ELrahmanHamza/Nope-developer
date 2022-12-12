@@ -1,0 +1,20 @@
+.highlighted {
+  box-shadow: 6px 6px #888888;
+  cursor: pointer;
+  border: 5px solid #ffb200 !important;
+  transform: scale(1.05);
+}
+
+.widget {
+  transition-delay: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.drag-over {
+  border: dashed 3px red;
+}
+
+.drag-sort-active {
+  background: transparent;
+  color: transparent;
+}

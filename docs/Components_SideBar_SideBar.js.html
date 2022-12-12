@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/SideBar/SideBar.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/SideBar/SideBar.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// Bootstrap components
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
+
+// Import icons
+import { FaBars } from "react-icons/fa";
+
+// Import custom hooks
+import useFetch from "../../Hooks/useFetch";
+
+// Import css
+import "./Sidebar.css";
+
+// Import contexts
+import { useWidgets } from "../../Contexts/widgets";
+
+// Import hooks
+import { useEffect } from "react";
+
+// Import components
+import DesignGroup from "../DesignGroup/DesignGroup";
+
+// Import backend
+import BACKEND from "../../Helpers/EndPoint";
+
+/**
+ * Component that contains the sidebar (Contains the widgets that the user can use)
+ *
+ * @Component
+ * @returns {React.element}
+ */
+function SideBar() {
+  // State for the side bar open and close
+  const [show, setShow] = useState(false);
+
+  // widgets context to store it for its id
+  const { widgets, setWidgets } = useWidgets();
+
+  // Handlers for open and close the sidebar
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  // Fetch widgets
+  const {
+    error,
+    isPending,
+    data: widgetsData,
+  } = useFetch(`${BACKEND}api/widgets/child/`);
+
+  useEffect(() => {
+    let widgetsJSON = null;
+    if (widgetsData !== null) {
+      widgetsJSON = {};
+
+      // Convert the code snippet from string to JSON
+      for (let i = 0; i &lt; widgetsData.length; i++) {
+        widgetsJSON[widgetsData[i]["title"]] = widgetsData[i];
+        try {
+          widgetsData[i]["codeSnippet"] = JSON.parse(
+            widgetsData[i]["codeSnippet"]
+          );
+        } catch (error) {}
+      }
+    }
+
+    // Set widgets to global state
+    if (!widgets) {
+      setWidgets(JSON.parse(JSON.stringify(widgetsJSON)));
+    }
+  });
+
+  // Filter widgets with there design name
+  // Contains an object &lt;design name>: [array of widgets]
+  let widgetDataSorted = null;
+  let lastDesign = "";
+  if (widgetsData) {
+    // Current design widgets
+    let curList = [];
+
+    // Initialize widget data sorted
+    widgetDataSorted = {};
+    for (const widget of widgetsData) {
+      // If design changed the store current design widgets and move to the next design
+      if (widget["design"] !== lastDesign) {
+        if (curList.length !== 0) widgetDataSorted[lastDesign] = curList;
+        curList = [];
+        lastDesign = widget["design"];
+      }
+      curList.push(widget);
+    }
+    widgetDataSorted[lastDesign] = curList;
+  }
+
+  return (
+    &lt;div className="ms-3">
+      {/* Button for the sidebar */}
+      &lt;Button
+        variant="success"
+        onClick={handleShow}
+        className="d-flex align-items-center"
+      >
+        &lt;FaBars size={30} />
+        &lt;span className="px-2 text-nowrap">Add Widget &lt;/span>
+      &lt;/Button>
+
+      {/* The off canvas that contains the widgets*/}
+      &lt;Offcanvas show={show} onHide={handleClose}>
+        &lt;Offcanvas.Header closeButton>
+          &lt;Offcanvas.Title>Widgets categories click to expand&lt;/Offcanvas.Title>
+        &lt;/Offcanvas.Header>
+
+        {isPending &amp;&amp; &lt;div>Loading...&lt;/div>}
+        {error &amp;&amp; &lt;div>{error}&lt;/div>}
+
+        &lt;Offcanvas.Body>
+          {widgetDataSorted &amp;&amp; (
+            &lt;>
+              {Object.keys(widgetDataSorted).map((design) => (
+                &lt;DesignGroup
+                  design={design}
+                  widgetDataSorted={widgetDataSorted}
+                  key={design}
+                />
+              ))}
+            &lt;/>
+          )}
+        &lt;/Offcanvas.Body>
+      &lt;/Offcanvas>
+    &lt;/div>
+  );
+}
+
+export default SideBar;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#About">About</a></li><li><a href="global.html#App">App</a></li><li><a href="global.html#Body">Body</a></li><li><a href="global.html#Branding">Branding</a></li><li><a href="global.html#convert_HTML_To_JSON">convert_HTML_To_JSON</a></li><li><a href="global.html#convert_HTML_To_JSON_Helper">convert_HTML_To_JSON_Helper</a></li><li><a href="global.html#DesignGroup">DesignGroup</a></li><li><a href="global.html#DesignMetaDate">DesignMetaDate</a></li><li><a href="global.html#EditPage">EditPage</a></li><li><a href="global.html#extractTextNodes">extractTextNodes</a></li><li><a href="global.html#Footer">Footer</a></li><li><a href="global.html#getCSSHelper">getCSSHelper</a></li><li><a href="global.html#getStyles">getStyles</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Image">Image</a></li><li><a href="global.html#initialValues">initialValues</a></li><li><a href="global.html#insertChild">insertChild</a></li><li><a href="global.html#NavBar">NavBar</a></li><li><a href="global.html#PreviewPage">PreviewPage</a></li><li><a href="global.html#Project">Project</a></li><li><a href="global.html#ProjectModal">ProjectModal</a></li><li><a href="global.html#Projects">Projects</a></li><li><a href="global.html#Services">Services</a></li><li><a href="global.html#SideBar">SideBar</a></li><li><a href="global.html#StyleBar">StyleBar</a></li><li><a href="global.html#useFetch">useFetch</a></li><li><a href="global.html#Widget">Widget</a></li><li><a href="global.html#WidgetSide">WidgetSide</a></li><li><a href="global.html#WorkspaceNavBar">WorkspaceNavBar</a></li><li><a href="global.html#Wrapper">Wrapper</a></li><li><a href="global.html#WrapperOne">WrapperOne</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Sun Sep 04 2022 02:51:00 GMT+0200 (Eastern European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
