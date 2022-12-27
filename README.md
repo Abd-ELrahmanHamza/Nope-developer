@@ -92,7 +92,7 @@
 
 ### Demo
 
-<video  src="https://drive.google.com/file/d/1q4FH6Q3Q9XMNDyEWZCGfXLfZ_WZQFIYB/view?usp=share_link"  alt="login" align="center"/>|<img  src="Images/register.png"  alt="register" align="center"/>
+<video  src="Images/LCNCDemo"  alt="login" align="center"/>|<img  src="Images/register.png"  alt="register" align="center"/>
 
 * **Design Page**
 
@@ -102,29 +102,29 @@
 
 | Dashboard | New project |
 |--|--|
-|<img  src="Images/Dashboard.png"  alt="register" align="center"/>|<img  src="Images/newproject.png"  alt="register" align="center"/>|
+|<img  src="Images/Dashboard.png"  alt="Dashboard" align="center"/>|<img  src="Images/newProject.png"  alt="newProject" align="center"/>|
 
 | Workspace |
 |--|
-|<img  src="Images/workspace.png"  alt="Droopy - Widgets" align="center"/>|
+|<img  src="Images/workspace.png"  alt="workspace" align="center"/>|
 
 
 
 | Header | Form |
 |--|--|
-|<img  src="Images/header.png"  alt="Droopy - Style"  align="center"/>|<img  src="Images/form.png"  alt="Droopy - Widget Attributes" align="center"/>|
+|<img  src="Images/header.png"  alt="header"  align="center"/>|<img  src="Images/form.png"  alt="form" align="center"/>|
 
 | CSS & Javascript | Change text |
 |--|--|
-|<img  src="Images/add css and javascript.png"  alt="Droopy - Style"  align="center"/>|<img  src="Images/change inner text.png"  alt="Droopy - Widget Attributes" align="center"/>|
+|<img  src="Images/add css and javascript.png"  alt="add css and javascript"  align="center"/>|<img  src="Images/change inner text.png"  alt="change inner text" align="center"/>|
 
 | Preview | Download |
 |--|--|
-|<img  src="Images/preview your work.png"  alt="Droopy - Style"  align="center"/>|<img  src="Images/download your work.png"  alt="Droopy - Widget Attributes" align="center"/>|
+|<img  src="Images/preview your work.png"  alt="preview your work"  align="center"/>|<img  src="Images/download your work.png"  alt="download your work" align="center"/>|
 
 | Final result |
 |--|
-|<img  src="Images/final result.png"  alt="Droopy - Style"  align="center"/>|
+|<img  src="Images/final result.png"  alt="final result"  align="center"/>|
 
 
 ---
