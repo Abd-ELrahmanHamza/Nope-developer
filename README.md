@@ -5,7 +5,7 @@
 
 <p align="center"><img src="Images/logo.png" alt="Nope" width="96" align="center"/></p>
 
-**Nope developer** is a Low-code / No-code opensource platform to build full web using pre-defined widgets. The user can build his own web application with no need of a coding background, Easy and Fast development, the website is built by draging and droping widgets, show and edit the code, save it for later editing and download it as a zip folder.  (You can design a **web applicaton** with **HTML/CSS and Js**)  
+**Nope developer** is a Low-code / No-code opensource platform to build full web using pre-defined widgets. The user can build his own web application with no need of a coding background, Easy and Fast development, the website is built by draging and droping widgets, save it for later editing and download it as a zip folder.  (You download the project in **HTML/CSS and Js**)  
 
 
 ## Table of Contents
