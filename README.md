@@ -5,16 +5,16 @@
 
 <p align="center"><img src="Images/logo.png" alt="Nope" width="96" align="center"/></p>
 
-**Nope developer** is a Low-code / No-code opensource platform to build full web or mobile apps. Easy and Fast development where the user can make his own application with no need of a strong coding background, the user can design it by draging and droping the different widgets, show and edit its code, save it for later editing and download it as a zip folder.  (currently, you can design a **web applicaton** with **HTML/CSS and Js**)  
+**Nope developer** is a Low-code / No-code opensource platform to build full web using pre-defined widgets. The user can build his own web application with no need of a coding background, Easy and Fast development, the website is built by draging and droping widgets, show and edit the code, save it for later editing and download it as a zip folder.  (You can design a **web applicaton** with **HTML/CSS and Js**)  
 
 
 ## Table of Contents
 
 - [Built with](#built-with)
 - [File Structure](#file-structure)
-- [Features](#features)
-- [Development](#development)
-- [API](#api)
+- [Demo](#demo)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
 - [License](#license)
 
 
@@ -27,6 +27,7 @@
 - [react-ace](https://www.npmjs.com/package/react-ace)
 - [react-icons](https://react-icons.github.io/react-icons/)
 
+## file-structure
 
 <details><summary>Detailed Structure</summary>
 <p>
@@ -92,7 +93,9 @@
 
 ### Demo
 
-<video  src="Images/LCNCDemo"  alt="login" align="center"/>|<img  src="Images/register.png"  alt="register" align="center"/>
+https://user-images.githubusercontent.com/68310502/209607189-ad86ae18-a969-48f5-8cce-5f456b459766.mp4
+
+## Screenshots
 
 * **Design Page**
 
@@ -128,7 +131,7 @@
 
 
 ---
-## Development
+## Getting Started
 
 Clone the repository and install all the necessary dependencies (`npm` is highly recommended)
 
