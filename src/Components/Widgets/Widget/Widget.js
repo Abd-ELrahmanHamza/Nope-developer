@@ -1,9 +1,6 @@
 // Import hooks
 import React, { useState, useEffect } from "react";
 
-// Import react-drag-reorder
-import { Draggable } from "react-drag-reorder";
-
 // Import helpers
 import { insertChild } from "../../../Helpers/insertChild";
 

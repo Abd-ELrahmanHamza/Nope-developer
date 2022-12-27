@@ -89,40 +89,42 @@
 
 
 ## Features
+
+### Demo
+
+<video  src="https://drive.google.com/file/d/1q4FH6Q3Q9XMNDyEWZCGfXLfZ_WZQFIYB/view?usp=share_link"  alt="login" align="center"/>|<img  src="Images/register.png"  alt="register" align="center"/>
+
 * **Design Page**
 
-| NavBar |
-|--|
-|<img  src="Features/NavBar.png"  alt="Droopy - NavBar" align="center"/>|
-
-| WorkSpace |
-|--|
-|<img  src="Features/emptyWorkSpace.png"  alt="Droopy - WorkSpace" align="center"/>|
-
-
-| Widgets | Layout | Templates | 
-|--|----|--|
-|<img  src="Features/WIdgets.png"  alt="Droopy - Widgets"  height="400"  align="center"/>|<img  src="Features/layouts.png"  alt="Droopy - Layout"  height="400"  align="center"/>|<img  src="Features/Pages.png"  alt="Droopy - Pages"  height="400"  align="center"/>|
-
-
-
-| Style | Attributes | Tree of widgets |
-|--|--|--|
-|<img  src="Features/Changestyle.png"  alt="Droopy - Style"  height="400"  align="center"/>|<img  src="Features/Attributes.png"  alt="Droopy - Widget Attributes"  height="400"  align="center"/>|<img  src="Features/Treeofwidgets.png"  alt="Droopy - Tree of widgets"  height="400"  align="center"/>|
-
-
-
-
-| Upload Image | Show/Edit code |
+| login | register |
 |--|--|
-|<img  src="Features/uploadeimage.png"  alt="Droopy - UploadImg"  align="center"/>|<img  src="Features/edithtmlcode.png"  alt="Droopy - Show/Edit code"   align="center"/>|
+|<img  src="Images/login.png"  alt="login" align="center"/>|<img  src="Images/register.png"  alt="register" align="center"/>|
+
+| Dashboard | New project |
+|--|--|
+|<img  src="Images/Dashboard.png"  alt="register" align="center"/>|<img  src="Images/newproject.png"  alt="register" align="center"/>|
+
+| Workspace |
+|--|
+|<img  src="Images/workspace.png"  alt="Droopy - Widgets" align="center"/>|
 
 
 
+| Header | Form |
+|--|--|
+|<img  src="Images/header.png"  alt="Droopy - Style"  align="center"/>|<img  src="Images/form.png"  alt="Droopy - Widget Attributes" align="center"/>|
 
-| Download Files | Preview | 
-|--|----|
-|<img  src="Features/Downloadedfiles.png"  alt="Droopy - Style"  width="500"  align="center"/>|<img  src="Features/Previewpage.png"  alt="Droopy - Preview"  width="500" align="center"/>|
+| CSS & Javascript | Change text |
+|--|--|
+|<img  src="Images/add css and javascript.png"  alt="Droopy - Style"  align="center"/>|<img  src="Images/change inner text.png"  alt="Droopy - Widget Attributes" align="center"/>|
+
+| Preview | Download |
+|--|--|
+|<img  src="Images/preview your work.png"  alt="Droopy - Style"  align="center"/>|<img  src="Images/download your work.png"  alt="Droopy - Widget Attributes" align="center"/>|
+
+| Final result |
+|--|
+|<img  src="Images/final result.png"  alt="Droopy - Style"  align="center"/>|
 
 
 ---
@@ -131,24 +133,15 @@
 Clone the repository and install all the necessary dependencies (`npm` is highly recommended)
 
 ```sh
-$ git clone https://github.com/itworx/ITWorx_LCNC_Tool_Frontend.git
-$ cd ITWorx_LCNC_Tool_Frontend
-$ npm i
+$ git clone https://github.com/Abd-ELrahmanHamza/Nope-developer.git
+$ cd Nope-developer
+$ npm install
 ```
 Start the dev server
 
 ```sh
  npm start
 ```
-
-
-- Change backend link in [./src/Helpers/EndPoint.js](./src/Helpers/EndPoint.js) with the deployment link
-
-
-## API
-API Repository could be found here:  https://github.com/itworx/ITWorx_LCNC_Tool_Backend
-
-
 
 ## License
 
